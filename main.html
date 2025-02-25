@@ -1,11 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>main section</h1>
+<body class="text-black bg-white">
+    <section class="md-w-1/2 min-h-max bg-slate-100 mx-auto">
+        <header>
+            <nav class="flex items-center justify-between py-2 px-2">
+                <div class="flex items-center justify-between">
+                    <img src="assets/Group.png" alt="">
+                    <div>
+                        <h1 class="font-bold text-2xl">$000</h1>
+                        <p>Available balance</p>
+                    </div>
+                </div>
+                <button class="border-1 bg-red-600 text-white rounded font-semibold p-4">logout</button>
+            </nav>
+           <section>
+            <div class="cards grid gap-2 mt-12 grid-cols-3 px-2">
+
+
+                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                    <img src="assets/wallet1.png" alt="">
+                    <p>Add Money</p>
+                </div>
+
+
+                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                    <img src="assets/money1.png" alt="">
+                    <p>Cash Out</p>
+                </div>
+
+
+                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                    <img src="assets/purse1.png" alt="">
+                    <p>Transfar Money</p>
+                </div>
+
+
+                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                    <img src="assets/bonus1.png" alt="">
+                    <p>Get Bonus</p>
+                </div>
+
+
+                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                    <img src="assets/send1.png" alt="">
+                    <p>Pay bill</p>
+                </div>
+
+
+
+
+                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                    <img src="assets/transaction1.png" alt="">
+                    <p>Transaction</p>
+                </div>
+
+            </div>
+           </section>
+        </header>
+        <section class="mt-8">
+            <h1 class="font-bold text-center text-2xl">Add Money</h1>
+
+            <!-- form filed start -->
+
+            <div class="">
+                <div class="card bg-slate-100 w-full max-w-sm shrink-0 shadow-2xl mx-auto">
+                  <form class="card-body">
+                    <div class="form-control">
+                        <legend>Add bank</legend>
+                            <div class="label">
+                            </div>
+                            <select class="select select-bordered bg-white flex">
+                                <div class="bg-blue-200">
+                                    <option value="Bkash">Bkash</option>
+                                    <option value="Nagod">Nagod</option>
+                                    <option value="Islami Bank">Islami Bank</option>
+                                    <option value="DBBL">DBBL</option>
+                                    <option value="UCB Bank">UCB Bank</option>
+                                </div>
+                            
+                            </select>
+
+                      <label class="label">
+                        <span class="label-text">Mobile Number</span>
+                      </label>
+                      <input id="numfield" type="number" placeholder="Enter your number" class="input input-bordered" required/>
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Password</span>
+                      </label>
+                      <input id="pinfield" type="password" placeholder="password" class="input input-bordered" required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="login-btn" class="btn btn-primary">Add Money</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- form filed end -->
+
+        </section>
+    </section>
 </body>
 </html>
