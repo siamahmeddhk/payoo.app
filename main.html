@@ -14,7 +14,7 @@
                 <div class="flex items-center justify-between">
                     <img src="assets/Group.png" alt="">
                     <div>
-                        <h1 class="font-bold text-2xl">$000</h1>
+                        <h1 class="font-bold text-2xl">$<span id="mainbal">000</span></h1>
                         <p>Available balance</p>
                     </div>
                 </div>
@@ -37,8 +37,8 @@
 
 
                 <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
-                    <img src="assets/purse1.png" alt="">
-                    <p>Transfar Money</p>
+                    <img  src="assets/purse1.png" alt="">
+                    <p class="whitespace-nowrap">Transfar Money</p>
                 </div>
 
 
@@ -90,19 +90,23 @@
                       <label class="label">
                         <span class="label-text">Mobile Number</span>
                       </label>
-                      <input id="numfield" type="number" placeholder="Enter your number" class="input input-bordered" required/>
+                      <input id="" type="number" placeholder="Enter your number" class="input input-bordered" required/>
                     </div>
                     <div class="form-control">
                       <label class="label">
                         <span class="label-text">Password</span>
                       </label>
-                      <input id="pinfield" type="password" placeholder="password" class="input input-bordered" required />
+                      <input id="pass" type="password" placeholder="password" class="input input-bordered" required />
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="addmoney" type="number" placeholder="Amount" class="input input-bordered" required />
                       <label class="label">
                         <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                       </label>
                     </div>
                     <div class="form-control mt-6">
-                      <button id="login-btn" class="btn btn-primary">Add Money</button>
+                      <button id="add-btn" class="btn btn-primary">Add Money</button>
                     </div>
                   </form>
                 </div>
@@ -114,5 +118,7 @@
 
         </section>
     </section>
+
+    <script src="script/addmoney.js"></script>
 </body>
 </html>
