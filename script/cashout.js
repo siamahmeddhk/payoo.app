@@ -9,6 +9,15 @@ document.getElementById('out-btn').addEventListener('click', function(e){
     if(validpaindai === 1234){
         let out = outmainbal - valcashout;
         document.getElementById('mainbal').innerText = out;
+
+        let div = document.createElement('div');
+        div.innerHTML = `
+        <p class="mt-4 p-2 bg-red-600 text-white text-center border-1"> cashout ${valcashout} to main balance </p>
+       
+        `
+        document.getElementById('trasiction').appendChild(div);
+
+
     }else{
        alert('error')
     }

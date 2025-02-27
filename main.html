@@ -18,7 +18,7 @@
                         <p>Available balance</p>
                     </div>
                 </div>
-                <button class="border-1 bg-red-600 text-white rounded font-semibold p-4">logout</button>
+                <button id="logout" class="border-1 bg-red-600 text-white rounded font-semibold p-4">logout</button>
             </nav>
            <section>
             <div class="cards grid gap-2 mt-12 grid-cols-3 px-2">
@@ -56,7 +56,7 @@
 
 
 
-                <div class="card flex items-center justify-center flex-col p-4 border-2 border-black">
+                <div id="tras" class="card flex items-center justify-center flex-col p-4 border-2 border-black">
                     <img src="assets/transaction1.png" alt="">
                     <p>Transaction</p>
                 </div>
@@ -159,9 +159,20 @@
       </section> -->
     </section>
 
+
+    <section id="trasiction">
+
+      <h1 class="font-bold text-center text-2xl">Transaction</h1>
+
+    </section>
+
+
+
+    <script src="utilities/utility.js"></script>
     <script src="script/addmoney.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/logout.js"></script>
     
 </body>
 </html>
